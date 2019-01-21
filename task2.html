@@ -1,0 +1,84 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task 2</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+			<legend>Your details</legend>
+			<ol>
+				<li><label for="Name">Name</label>
+					<input type="text" id="Name" placeholder="First and last name" autofocus>
+				</li>
+				<li>
+				<label for="Email">Email</label>
+				<input type="email" id="Email" placeholder="ex@gmail.com">
+				</li>
+				<li>
+				<label for="Phone">Phone</label>
+				<input type="tel" id="Phone" placeholder="Eg. +7365827687" maxlength="10">
+				</li>
+			</ol>
+			</fieldset>
+			 <fieldset>
+			<legend>Delivery address</legend>
+			<ol>
+				<li>
+				<label for="Address">Address</label>
+				<textarea id="Address"></textarea>
+				</li>
+				<li>
+				<label for="Post-code">Post code</label>
+				<input type="number" id="Post-code">
+				</li>
+				<li>
+				<label for="Country">Country</label>
+				<input type="text" id="Country">
+				</li>
+			</ol>
+			</fieldset>
+			<fieldset>
+			<legend>Card details</legend>
+			<ol>
+				<li>
+				<fieldset>
+					<legend>Card type</legend>
+					<ol>
+					<li>
+						<input type="radio" id="Cards" name="Cards" value="VISA">
+						<label for="Cards">VISA</label>
+					</li>
+					<li>
+						<input type="radio" id="Cards" name="Cards" value="AmEx">
+						<label for="Cards">AmEx</label>
+					</li>
+					<li>
+						<input type="radio" id="Cards" name="Cards" value="Mastercard" checked="on">
+						<label for="Cards">Mastercard</label>
+					</li>
+					</ol>
+				</fieldset>
+				</li>
+				<li>
+				<label for="Card-number">Card number</label>
+				<input type="number" id="Card-number">
+				</li>
+				<li>
+				<label for="Security-code">Security code</label>
+				<input type="number" id="Security-code">
+				</li>
+				<li>
+				<label for="Name-card">Name card</label>
+				<input type="text" id="Name-card" size="21" placeholder="Exact name as on the card">
+				</li>
+			</ol>
+			</fieldset>
+			<fieldset>
+			<button style="border-radius: 20px; border: 1px solid black;">Buy it!</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
