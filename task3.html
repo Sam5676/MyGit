@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task 3</title>
+		<style>
+			li{
+				list-style: none;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Form Demo</h1>
+		<form autocomplete="on">
+			<fieldset>
+				<legend>Text input</legend>
+				<ul>
+					<li>
+						<label for="text-box">Text box</label>
+						<input type="text" list="more-variants" id="text-box" name="text" value="text here">
+						<datalist id="more-variants">
+							<option>How to cook cookies?</option>
+							<option>Count of stars</option>
+							<option>The most speed animal</option>
+							<option>Music for successful persons</option>
+						</datalist>
+					</li>
+					<li>
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" value="ssssss">
+					</li>
+					<li>
+						<label for="text-area">Text Area</label>
+						<textarea id="text-area" placeholder="Your taxt here" rows="10" cols="60"></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Text input</legend>
+				<ul>
+					<li>
+						<label>Select List
+							<select>
+								<option value="one">one</option>
+								<option value="two">two</option>
+								<option value="three" selected="on">three</option>
+							</select>
+						</label>
+					</li>
+					<li>
+						<label>Check boxes
+							<label><input type="checkbox" name="eggs" value="eggs">Green Eggs</label>
+							<label><input type="checkbox" name="ham" value="ham">Ham</label>
+						</label>
+					</li>
+					<li>
+						<label>Radio buttons
+							<label><input type="radio" name="size" value="small" checked>small</label>
+							<label><input type="radio" name="size" value="medium">medium</label>
+							<label><input type="radio" name="size" value="large">large</label>
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Buttons</legend>
+				<button type="button" onclick="alert('standart button')">standart button</button>
+				<input type="button" onclick="alert('input button')" name="input-button" value="input button">
+				<input type="reset" name="reset" value="reset">
+				<button formmethod="post">Submit</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
